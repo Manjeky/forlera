@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>For Lera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <h1 class="title">For Lera</h1>
+    <div class="form-container">
+        <input type="password" id="password" placeholder="Введите пароль">
+        <button onclick="checkPassword()">Войти</button>
+        <p id="error" class="error-text"></p>
+    </div>
+    <script>
+        function checkPassword() {
+            const input = document.getElementById('password').value;
+            if (input === "lema2505") {
+                window.location.href = "secret.html";
+            } else {
+                document.getElementById('error').innerText = "Неверный пароль. Попробуй еще раз ❤️";
+            }
+        }
+    </script>
+</body>
+</html>
